@@ -28,12 +28,16 @@ M.mason = {
     "stylua",
 
     -- web dev stuff
+    "bashls",
+    "eslint",
+    "dockerls",
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
     "deno",
     "prettier",
-
+    "yamlls",
+    "jsonls",
     -- c/cpp stuff
     "clangd",
     "clang-format",
