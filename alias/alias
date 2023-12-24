@@ -1,0 +1,61 @@
+#
+#    __ _| (_) __ _ ___
+#   / _` | | |/ _` / __|
+#  | (_| | | | (_| \__ \
+# (_)__,_|_|_|\__,_|___/
+#
+# Local alias file
+#
+# For convenience
+#
+alias ll="ls -lart --color=tty"
+alias ls="ls -hN --color=auto --group-directories-first"
+alias v="vi"
+alias diff="diff --color=auto -u"
+alias grep="grep --color"
+alias version="cat /etc/issue"
+alias bdf="df -lh"
+alias beep="echo \\\a"
+alias cls="/usr/bin/clear"; export cls
+alias dir="ls -la"; export dir
+alias h=history
+alias hsi="history|grep $1"
+alias l="ls -l"
+alias psg="ps -ef|grep -v grep |grep "
+alias myip="curl ifconfig.co/"
+
+alias mkdir='mkdir -p'
+alias d.='df -h . |sed 1d'
+alias showdirsize="du -skh * | sort -n -r -k 1,1"
+alias du="ncdu"
+
+# Network
+#
+alias showservices="netstat -atup"
+alias netload="nload -t 200 -s 7 -i 1024 -o 128 -U h eth0"
+alias netstatus="netstat -lnp --ip"
+
+#
+# tmux
+#
+alias tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf"
+
+#
+# git aliases
+#
+alias gls='git ls-tree --name-only --full-tree -r HEAD'
+alias gs='vim +0Git "+normal gU"'
+alias cherry-ours="sed -Ei ' /^={7,}/,/>{7,}.*$/d ; /^<{7,}.*$/d '"
+alias cherry-ours-test="sed -E ' /^={7,}/,/>{7,}.*$/d ; /^<{7,}.*$/d '"
+alias cherry-theirs="sed -Ei ' /^<{7,}/,/={7,}.*$/d ; /^>{7,}.*$/d '"
+alias cherry-theirs_test="sed -E ' /^<{7,}/,/={7,}.*$/d ; /^>{7,}.*$/d '"
+
+#
+# k8s
+#
+alias k='kubectl'
+
+#
+# Terraform
+#
+alias tf='terraform'

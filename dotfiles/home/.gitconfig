@@ -1,0 +1,18 @@
+[user]
+	email = luca.dimaio1@gmail.com
+	name = Luca Di Maio
+	signingkey = luca.dimaio1@gmail.com
+[core]
+	askpass = ""
+[tig]
+  main-view-date-display = relative-compact
+  main-view-author-display = abbreviated
+  main-view-id-display = yes
+[commit]
+	gpgsign = true
+[credential]
+	helper = /usr/libexec/git/git-credential-libsecret
+	# helper = /usr/lib/git-core/git-credential-libsecret
+	# helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+[fetch]
+	prune = true
