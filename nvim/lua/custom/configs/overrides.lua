@@ -48,6 +48,7 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+    "vscode-json-language-server",
   },
 }
 
