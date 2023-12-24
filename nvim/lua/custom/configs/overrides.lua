@@ -40,7 +40,6 @@ M.mason = {
     "hadolint",
     "terraform-ls",
     "tflint",
-    "tfint",
     "markdown-toc",
     "markdownlint",
     "yaml-language-server",
