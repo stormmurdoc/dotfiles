@@ -1,1 +1,0 @@
-[ -e ~/.bashrc ] && source ~/.bashrc
