@@ -62,3 +62,6 @@ memusage() {
 if [ -f $HOME/.alias ]; then
 	source $HOME/.alias
 fi
+
+export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history
+eval "$(starship init zsh)"
