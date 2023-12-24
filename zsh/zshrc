@@ -21,6 +21,6 @@ export TERM=xterm-256color
 # Bindings
 bindkey -s '^o' 'lf\n'
 bindkey -s '^n' 'nvim\n'
-
+bindkey -s '^p' 'pre-commit run -av\n'
 
 source ~/.alias
