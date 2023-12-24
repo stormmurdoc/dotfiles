@@ -35,6 +35,7 @@ M.mason = {
     "prettier",
     "ansible-lint",
     "shellcheck",
+    "docker-langserver",
     -- c/cpp stuff
     "clangd",
     "clang-format",
