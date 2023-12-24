@@ -14,22 +14,7 @@ export PATH=$HOME/.local/bin:$HOME/bin:$HOME/scripts/:$PATH
 # set VI to default editor
 set -o vi
 
-# set default editor (crontab -e)
-export EDITOR=/usr/bin/vim
-export TERM=$TERMINAL
-export FILE="lf"
-
-## Memory overview
-memusage() {
-    ps aux | awk '{if (NR > 1) print $5;
-                   if (NR > 2) print "+"}
-                   END { print "p" }' | dc
-}
-
-# Load aliases
-if [ -f $HOME/.alias ]; then
-	source $HOME/.alias
-fi
-
-#export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history
-#eval "$(starship init zsh)"
+export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history
+eval "$(starship init zsh)"
+export TERM=xterm-256color
+alias ll="ls -l"
