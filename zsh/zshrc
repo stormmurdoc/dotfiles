@@ -18,4 +18,9 @@ export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_histo
 eval "$(starship init zsh)"
 export TERM=xterm-256color
 
+# Bindings
+bindkey -s '^o' 'lf\n'
+bindkey -s '^n' 'nvim\n'
+
+
 source ~/.alias
