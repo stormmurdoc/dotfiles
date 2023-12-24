@@ -27,19 +27,20 @@
 [pull]
     rebase = false
 [alias]
-   st = status
-    s = status
-   co = checkout
-  cob = checkout -d
-  del = branch -D
-   br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
-   ci = commit
-   br = branch
-   up = rebase
- undo = reset HEAD~1 --mixed
-  res = !git reset --hard
-   lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
- done = !git push origin HEAD
+     st = status
+      s = status
+     co = checkout
+    cob = checkout -d
+    del = branch -D
+     br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+     ci = commit
+     br = branch
+     up = rebase
+unstage = reset HEAD --
+   undo = reset HEAD~1 --mixed
+    res = !git reset --hard
+     lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+   done = !git push origin HEAD
 rebase-last-five = "!b=\"$(git branch --no-color | cut -c3-)\" ; h=\"$(git rev-parse $b)\" ; echo \"Current branch: $b $h\" ; c=\"$(git rev-parse $b~4)\" ; echo \"Recreating $b branch with initial commit $c ...\" ; git checkout --orphan new-start $c ; git commit -C $c ; git rebase --onto new-start $c $b ; git branch -d new-start ; git gc"
  pigc = git repack -a -d -f --window=0
 
