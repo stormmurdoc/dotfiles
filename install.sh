@@ -2,4 +2,5 @@
 WD=$(pwd)
 echo "Setup dotfiles"
 ln -svf "$WD"/alias/alias ~/.alias
-#ln -svf "$WD"/zsh/zshrc ~/.zshrc
+ln -svf "$WD"/nvim/lua/custom/ ~/.config/nvim/lua/custom/
+#ln -svf "$WD"/zsh/zshrc ~/.zshr
