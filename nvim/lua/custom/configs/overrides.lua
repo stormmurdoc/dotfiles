@@ -35,9 +35,20 @@ M.mason = {
     "prettier",
     "ansible-lint",
     "shellcheck",
+    "dockerfile-language-server",
+    "docker-compose-language-service",
+    "hadolint",
+    "terraform-ls",
+    "tflint",
+    "markdown-toc",
+    "markdownlint",
+    "yaml-language-server",
+    "yamllint",
+    "yamlfix",
     -- c/cpp stuff
     "clangd",
     "clang-format",
+    "json-lsp",
   },
 }
 
