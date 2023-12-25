@@ -32,6 +32,11 @@ zstyle ':completion:*' list-colors ''
 # set VI to default editor
 set -o vi
 
+# History in cache directory:
+HISTSIZE=10000
+SAVEHIST=10000
+HIST_STAMPS="dd.mm.yyyy"
+
 export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history
 eval "$(starship init zsh)"
 export TERM=xterm-256color
