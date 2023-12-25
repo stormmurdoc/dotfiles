@@ -25,4 +25,34 @@ bindkey -s '^p' 'pre-commit run -av\n'
 
 source ~/.alias
 
+# zsh-autosuggestions config
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#4f4f4f'
+bindkey '^ ' autosuggest-accept # STRG-Space to complete
+
+# tea completion
+PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 [ -f "/home/murdoc/.config/tea/autocomplete.zsh" ] && source "/home/murdoc/.config/tea/autocomplete.zsh"
+# Arch
+[ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ] && \
+   source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Debian
+[ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && \
+   source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# macOS
+[ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && \
+   source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+# Load zsh-syntax-highlighting; should be last.
+# Arch
+[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && \
+   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Debian
+[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && \
+   source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# macOS
+[ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && \
+   source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+zstyle ':completion:*' rehash true
 # tmux a || tmux -f "${XDG_CONFIG_HOME:-$HOME/.config}"/tmux/tmux.conf
