@@ -23,32 +23,29 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-    "stylua",
-
-    -- web dev stuff
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "deno",
-    "prettier",
     "ansible-lint",
-    "shellcheck",
-    "dockerfile-language-server",
+    "bash-language-server",
+    "clang-format",
+    "clangd",
+    "css-lsp",
+    "deno",
     "docker-compose-language-service",
+    "dockerfile-language-server",
     "hadolint",
-    "terraform-ls",
-    "tflint",
+    "html-lsp",
+    "json-lsp",
+    "lua-language-server",
     "markdown-toc",
     "markdownlint",
+    "prettier",
+    "shellcheck",
+    "stylua",
+    "terraform-ls",
+    "tflint",
+    "typescript-language-server",
     "yaml-language-server",
-    "yamllint",
     "yamlfix",
-    -- c/cpp stuff
-    "clangd",
-    "clang-format",
-    "json-lsp",
+    "yamllint",
   },
 }
 
