@@ -9,9 +9,9 @@
 #
 
 [user]
-	email = murdoc@storm-clan.de
-	name = stormmurdoc
-	useConfigOnly = yes
+    email = murdoc@storm-clan.de
+    name = murdoc
+    useConfigOnly = yes
 [color]
     branch = auto
     diff = auto
@@ -19,9 +19,9 @@
     status = auto
     ui = auto
 [credential]
-	helper = cache
+    helper = cache
 [core]
-	editor = vim
+    ditor = vim
 [push]
     default = simple
 [pull]
