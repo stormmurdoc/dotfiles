@@ -6,4 +6,5 @@ ln -svf "$WD"/nvim/lua/custom ~/.config/nvim/lua/
 ln -svf "$WD"/zsh/zshrc ~/.zshrc
 ln -svf "$WD"/git/config ~/.gitconfig
 ln -svf "$WD"/lf/ ~/.config/
+ln -svf "$WD"/tmux/ ~/.config/
 echo "+++ Setup dotfiles - done +++"
