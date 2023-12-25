@@ -1,0 +1,51 @@
+## Bindings
+
+map GG top
+map gd cd ~/Downloads//
+map gh cd ~
+map gl cd ~/.local/bin/
+map gw cd ~/workspaces/
+map DD delete2
+map e !easytag ./
+map E extract
+map C !~/.local/bin/pdf2jpg $f
+map R !convert -rotate -90 "$f" "$f"
+map M moveto
+map <bs> set hidden!
+map <c-n> push :mkdir<space>
+map <c-r> reload
+map <c-l> fzf_locate
+map <c-f> $lf -remote "send $id select '$(fzf)'"
+map <c-x> !nvim  ~/.config/lf/lfrc
+
+# mpd mappings
+map tf mpd_add f
+map td mpd_add d
+
+# Archive Mappings
+map xz zip
+map xt tar
+map xg targz
+map xb targz
+map xu unarchive
+
+#map <enter> shell
+map x cut
+map X !~/.local/bin/ext "$f"
+map o &open $f
+map O $open --ask $f
+map <enter> open
+
+#
+map A rename # at the very end
+map c push A<c-u> # new rename
+map I push A<c-a> # at the very beginning
+map i push A<a-b><a-b><a-f> # before extention
+map a push A<a-b> # after extention
+map B bulkrename
+map b $setbg $f
+
+#
+map <c-e> down
+map <c-y> up
+map V push :!vim<space>
