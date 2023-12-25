@@ -6,4 +6,4 @@ ln -svf "$WD"/nvim/lua/custom ~/.config/nvim/lua/
 ln -svf "$WD"/zsh/zshrc ~/.zshrc
 ln -svf "$WD"/git/config ~/.gitconfig
 mkdir -p ~/.config/lf
-ln -svf "$WD"/lf/ ~/.config/lf
+ln -svf "$WD"/lf/ ~/.config/
