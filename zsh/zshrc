@@ -11,6 +11,24 @@ export TERM="xterm-256color"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.local/bin:$HOME/bin:$HOME/scripts/:$PATH
 
+#
+# Completion
+#
+autoload -U compinit && compinit -u
+zmodload zsh/complist
+
+zstyle ':completion:*' menu select
+zstyle ':completion:*' completer _complete
+
+# Make completion:
+# - Case-insensitive.
+# - Accept abbreviations after . or _ or - (ie. f.b -> foo.bar).
+# - Substring complete (ie. bar -> foobar).
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
+
+# Colorize completions using default `ls` colors.
+zstyle ':completion:*' list-colors ''
+
 # set VI to default editor
 set -o vi
 
