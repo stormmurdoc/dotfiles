@@ -7,6 +7,7 @@
 
 # Assure zsh we can display 256 colours
 export TERM="xterm-256color"
+export EDITOR=nvim
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.local/bin:$HOME/bin:$HOME/scripts/:$PATH
@@ -39,7 +40,6 @@ HIST_STAMPS="dd.mm.yyyy"
 
 export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history
 eval "$(starship init zsh)"
-export TERM=xterm-256color
 
 # Bindings
 bindkey -s '^o' 'lf\n'
