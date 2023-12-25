@@ -25,4 +25,4 @@ bindkey -s '^p' 'pre-commit run -av\n'
 
 source ~/.alias
 
-tmux a || tmux -f "${XDG_CONFIG_HOME:-$HOME/.config}"/tmux/tmux.conf
+# tmux a || tmux -f "${XDG_CONFIG_HOME:-$HOME/.config}"/tmux/tmux.conf
