@@ -1,5 +1,6 @@
 set previewer '~/.config/lf/scope'
 set autoquit true
+set hidden true
 # cmds/functions
 cmd open ${{
     case $(file --mime-type "$(readlink -f $f)" -b) in
