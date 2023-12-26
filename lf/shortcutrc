@@ -4,7 +4,7 @@ map GG top
 map gd cd ~/Downloads//
 map gh cd ~
 map gl cd ~/.local/bin/
-map gw cd ~/workspaces/
+map gw cd /workspaces/
 map DD delete2
 map e !easytag ./
 map E extract
