@@ -62,7 +62,7 @@ cmd copyto ${{
 
 # Fuzzy finder
 cmd fzf_locate ${{
-    out=$(locate home | fzf -e -i)
+    out=$(locate workspaces | fzf -e -i)
     if [ -f "$out" ];then
         # File
         file="$(basename "$out")"
