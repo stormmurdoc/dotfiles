@@ -43,7 +43,7 @@ M.mason = {
     "terraform-ls",
     "tflint",
     "typescript-language-server",
-    "yaml-language-server",
+    -- "yaml-language-server",
     "yamlfix",
     "yamllint",
   },
