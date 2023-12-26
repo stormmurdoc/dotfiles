@@ -80,28 +80,17 @@ cmd bulkrename $vidir
 ## Bindings
 
 map GG top
-map gb cd ~/Bilder/
-map gd cd ~/Downloads//
 map gh cd ~
-map gi cd /data/trinity/transfer/in
+map gw cd /workspaces/
 map gl cd ~/.local/bin/
-map gm $lf -remote "send $id cd \"$XDG_MUSIC_DIR\""
-map go cd ~/ownCloud/
-map gs cd ~/tmp/ScanInbox/
-map gv cd ~/Videos/Filme/
-map gw cd ~/workspace/
 map DD delete
-map e !easytag ./
 map E extract
-map C !~/.local/bin/pdf2jpg $f
-map R !convert -rotate -90 "$f" "$f"
 map M moveto
 map <bs> set hidden!
 map <c-n> push :mkdir<space>
 map <c-r> reload
 map <c-l> fzf_locate
 map <c-f> $lf -remote "send $id select '$(fzf)'"
-map <c-x> !nvim -u /home/murdoc/.config/nvim/init.vim ~/.config/lf/lfrc
 
 # mpd mappings
 map tf mpd_add f
