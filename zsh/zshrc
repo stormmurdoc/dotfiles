@@ -6,7 +6,7 @@
 #
 
 # Assure zsh we can display 256 colours
-export TERM="vt100"
+export TERM="ansi"
 export EDITOR=nvim
 
 # If you come from bash you might have to change your $PATH.
