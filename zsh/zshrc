@@ -78,4 +78,6 @@ PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 [ -f "/home/murdoc/.config/tea/autocomplet
    source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 zstyle ':completion:*' rehash true
+
+tmux a || tmux -f "${XDG_CONFIG_HOME:-$HOME/.config}"/tmux/tmux.conf
 # tmux a || tmux -f "${XDG_CONFIG_HOME:-$HOME/.config}"/tmux/tmux.conf
