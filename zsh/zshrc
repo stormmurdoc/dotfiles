@@ -79,5 +79,5 @@ PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 [ -f "/home/murdoc/.config/tea/autocomplet
 
 zstyle ':completion:*' rehash true
 
-tmux a || tmux -f "${XDG_CONFIG_HOME:-$HOME/.config}"/tmux/tmux.conf
+tmux a 2>&1 > /dev/null && tmux -f "${XDG_CONFIG_HOME:-$HOME/.config}"/tmux/tmux.conf
 # tmux a || tmux -f "${XDG_CONFIG_HOME:-$HOME/.config}"/tmux/tmux.conf
