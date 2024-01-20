@@ -38,6 +38,9 @@ HISTSIZE=10000
 SAVEHIST=10000
 HIST_STAMPS="dd.mm.yyyy"
 
+# set umask
+umask 0077
+
 export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history
 eval "$(starship init zsh)"
 
