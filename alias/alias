@@ -49,6 +49,7 @@ alias cherry-ours="sed -Ei ' /^={7,}/,/>{7,}.*$/d ; /^<{7,}.*$/d '"
 alias cherry-ours-test="sed -E ' /^={7,}/,/>{7,}.*$/d ; /^<{7,}.*$/d '"
 alias cherry-theirs="sed -Ei ' /^<{7,}/,/={7,}.*$/d ; /^>{7,}.*$/d '"
 alias cherry-theirs_test="sed -E ' /^<{7,}/,/={7,}.*$/d ; /^>{7,}.*$/d '"
+alias lg='lazygit'
 
 #
 # k8s
